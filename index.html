@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal / Popup Window</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Main Trigger Button -->
+    <div class="main-content">
+        <button id="openModalBtn" class="trigger-btn">Open Modal Window</button>
+    </div>
+
+    <!-- Modal Overlay Background -->
+    <div id="modalOverlay" class="modal-overlay">
+        
+        <!-- Modal Card Content Box -->
+        <div class="modal-box">
+            <button id="closeModalIcon" class="close-icon-btn">&times;</button>
+            
+            <h2 class="modal-title">Welcome to SyntecxHub</h2>
+            <p class="modal-text">Please fill out this quick form or close the window to return to the page.</p>
+            
+            <!-- Simple Form Example Inside Modal -->
+            <form class="modal-form" onsubmit="event.preventDefault();">
+                <input type="text" placeholder="Enter your full name" required>
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="submit-btn">Submit Info</button>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
